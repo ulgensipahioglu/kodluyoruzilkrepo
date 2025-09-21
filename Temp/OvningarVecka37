@@ -1,0 +1,40 @@
+Det är dags att börja med objektorienterad programmering. 
+Vi ska nu skapa enkla objekt i varje övning, samt köra vårt program från ett separat objekt. 
+D.v.s vi vill inte göra mycket mer i main än att starta programmet. 
+
+1. Klasser. 
+Du blir anställd som lärare på Jensen YH. 
+För att göra det enkelt för dig att hålla reda på elevernas betyg så ska du skapa ett program där du kan:
+
+Skapa elev-objekt. Dessa bör innehålla information som: namn, personnummer, betyg kopplat till kurs.
+
+I elevobjektet ska finnas en metod för att sätta betyg i en viss kurs. Vi kan representera dessa med 0-2 (IG-VG).  
+Det ska också finnas en metod för att ta fram en elevs medelsnittsbetyg. 
+
+Eleverna kan sparas i t.ex. en ArrayList<Student>. 
+Kurserna kan vara hårdkodade, då dessa inte behöver bytas ut.
+
+2. Recursion.
+Du har börjat tänka på framtiden, och vill därför starta upp ett fondkonto.
+Du vet att man kan räkna med ungefär 5-10% avkastning per år, och är intresserad av hur mycket du kommer hinna spara ihop.
+RÄNTA PÅ RÄNTA!
+
+Skapa en funktion som tar in följande: antal år, månadsspar, avkastning, startsumma.
+Din funktion skall rekursivt räkna ut hur mycket pengar du kommer ha om X antal år, där du sparar Y antal kronor i månaden, med en uppskattad avkastning på Z%, och en startsumma på N kronor.
+
+3. Superklasser.
+
+Du är en zoolog som vill kartlägga djur. 
+Börja med att skapa en Animal-klass. Denna klass ska innehålla en funktion sound() som skriver till System.out. 
+Skapa sedan en Tame-klass som extends Animal. Denna ska ha en funktion pet() som skriver till System.out.
+Skapa en Wild-klass som extends Animal. Denna ska ha en funktion avoid() som skriver till System.out
+
+Skapa några djurrelaterade klasser som ärver av antingen Animal eller Tame. Override:a funktionerna du skapade i superklasserna.
+T.ex. Animal -> Tame -> Dog där dog.speak() resulterar i "Bark!" och dog.pet() resulterar i "The dog wags it's tail". 
+Eller Animal -> Wild -> Crow som har crow.speak() som resulterar i "Caw!" och crow.avoid() som resulterar I "You avoid the wild animal".  
+
+Du får självklart lägga till fler funktioner, och även instansvariabler. T.ex. height, move(), speed etc. 
+
+Tänk på:
+Meningen med övningen är inte att göra en lista av alla möjliga djur. Utan att träna på att skapa superklasser. 
+Gör några olika klasser, och lägg till lämpliga funktioner samt instansvariabler vid lämplig nivå!
